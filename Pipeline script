@@ -1,0 +1,64 @@
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone GitHub Repository') {
+            steps {
+                git branch: 'main',
+                    url: 'https://github.com/Avishkar5658/jenkins-cicd-pipeline-static-website.git'
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                sh '''
+                    docker build -t static-website:latest .
+                '''
+            }
+        }
+
+        stage('Deploy Website Container') {
+            steps {
+                sh '''
+                    docker rm -f static-website || true
+
+                    docker run -d \
+                        --name static-website \
+                        --restart unless-stopped \
+                        -p 8080:80 \
+                        static-website:latest
+
+                    docker ps --filter name=static-website
+                '''
+            }
+        }
+
+        stage('Verify Deployment') {
+            steps {
+                sh '''
+                    for i in $(seq 1 10); do
+                        if curl --fail --silent \
+                            http://localhost:8080/ \
+                            -o /tmp/website-check.html; then
+                            break
+                        fi
+                        sleep 2
+                    done
+
+                    test -s /tmp/website-check.html
+                    echo "Website deployment verified successfully!"
+                '''
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'SUCCESS: Website is running in Docker!'
+        }
+        failure {
+            echo 'FAILED: Check Console Output for the error.'
+        }
+    }
+}
