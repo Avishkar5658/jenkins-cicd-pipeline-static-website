@@ -1,0 +1,863 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive design -->
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <!-- Website title -->
+    <title>
+        ExploreWithUs | Explore • Trek • Discover
+    </title>
+
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+
+            <!-- Logo -->
+
+            <a
+                href="#home"
+                class="logo"
+            >
+                Explore<span>WithUs</span>
+            </a>
+
+
+            <!-- Navigation -->
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#treks">
+                        Treks
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#forts">
+                        Forts
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#find-trek">
+                        Find Your Trek
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#community">
+                        Community
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- Mobile menu button -->
+
+            <button
+                type="button"
+                class="menu-btn"
+                id="menuBtn"
+                aria-label="Open navigation menu"
+            >
+                ☰
+            </button>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- =========================================
+             HERO SECTION
+        ========================================== -->
+
+        <section
+            class="hero"
+            id="home"
+        >
+
+            <div class="hero-content">
+
+                <p class="hero-tag">
+                    EXPLORE • TREK • DISCOVER
+                </p>
+
+
+                <h1>
+                    Discover the
+                    <span>History side</span>
+                    of Maharashtra
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Discover beautiful forts,
+                    hidden trails and unforgettable
+                    adventures across Maharashtra.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#treks"
+                        class="btn primary-btn"
+                    >
+                        Explore Treks
+                    </a>
+
+
+                    <a
+                        href="#find-trek"
+                        class="btn secondary-btn"
+                    >
+                        Find My Trek
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             TREKS SECTION
+        ========================================== -->
+
+        <section
+            class="treks-section"
+            id="treks"
+        >
+
+            <div class="section-heading">
+
+                <p class="section-tag">
+                    UPCOMING ADVENTURES
+                </p>
+
+                <h2>
+                    Explore Our Treks
+                </h2>
+
+                <p>
+                    Choose your next adventure
+                    and explore Maharashtra.
+                </p>
+
+            </div>
+
+
+            <!-- Search -->
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchTrek"
+                    placeholder="🔍 Search for a trek..."
+                >
+
+            </div>
+
+
+            <!-- Trek Cards -->
+
+            <div
+                class="trek-container"
+                id="trekContainer"
+            >
+
+
+                <!-- Rajgad -->
+
+                <div
+                    class="trek-card"
+                    data-name="rajgad sunrise trek"
+                    data-difficulty="moderate"
+                >
+
+                    <div class="trek-image">
+
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu2uNR60gRMT30P3DRBt0lB93pyT6VkZCax0HcCyT83g&s=10"
+                            alt="Rajgad Fort"
+                        >
+
+                        <span class="difficulty moderate">
+                            Moderate
+                        </span>
+
+                    </div>
+
+
+                    <div class="trek-content">
+
+                        <h3>
+                            Rajgad Sunrise Trek
+                        </h3>
+
+                        <p>
+                            📍 Pune → Rajgad
+                        </p>
+
+                        <p>
+                            📅 18 October 2026
+                        </p>
+
+                        <p>
+                            ⏱️ 1 Day
+                        </p>
+
+
+                        <div class="trek-bottom">
+
+                            <strong>
+                                ₹799
+                            </strong>
+
+                            <button
+                                type="button"
+                                class="btn primary-btn book-btn"
+                            >
+                                Book Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Sinhagad -->
+
+                <div
+                    class="trek-card"
+                    data-name="sinhagad explorer"
+                    data-difficulty="easy"
+                >
+
+                    <div class="trek-image">
+
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRciIZfup6bMBtJK0Q2TvzxHfvegbP7MaCJm8-NPSmmuw&s=10"
+                            alt="Sinhagad Fort"
+                        >
+
+                        <span class="difficulty easy">
+                            Easy
+                        </span>
+
+                    </div>
+
+
+                    <div class="trek-content">
+
+                        <h3>
+                            Sinhagad Explorer
+                        </h3>
+
+                        <p>
+                            📍 Pune → Sinhagad
+                        </p>
+
+                        <p>
+                            📅 25 October 2026
+                        </p>
+
+                        <p>
+                            ⏱️ Half Day
+                        </p>
+
+
+                        <div class="trek-bottom">
+
+                            <strong>
+                                ₹499
+                            </strong>
+
+                            <button
+                                type="button"
+                                class="btn primary-btn book-btn"
+                            >
+                                Book Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Torna -->
+
+                <div
+                    class="trek-card"
+                    data-name="torna adventure trek"
+                    data-difficulty="difficult"
+                >
+
+                    <div class="trek-image">
+
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGrBzo2qTIlfus8fYVhBjDy9XoOLR1h5_N332cQYB3PQ&s=10"
+                            alt="Torna Fort"
+                        >
+
+                        <span class="difficulty difficult">
+                            Difficult
+                        </span>
+
+                    </div>
+
+
+                    <div class="trek-content">
+
+                        <h3>
+                            Torna Adventure Trek
+                        </h3>
+
+                        <p>
+                            📍 Pune → Torna
+                        </p>
+
+                        <p>
+                            📅 1 November 2026
+                        </p>
+
+                        <p>
+                            ⏱️ 1 Day
+                        </p>
+
+
+                        <div class="trek-bottom">
+
+                            <strong>
+                                ₹999
+                            </strong>
+
+                            <button
+                                type="button"
+                                class="btn primary-btn book-btn"
+                            >
+                                Book Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             WHY EXPLOREWITHUS
+        ========================================== -->
+
+        <section class="features-section">
+
+            <div class="section-heading">
+
+                <p class="section-tag">
+                    WHY US
+                </p>
+
+                <h2>
+                    Why ExploreWithUs?
+                </h2>
+
+            </div>
+
+
+            <div class="features-container">
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🥾
+                    </div>
+
+                    <h3>
+                        Curated Treks
+                    </h3>
+
+                    <p>
+                        Discover carefully selected
+                        trekking experiences across
+                        Maharashtra.
+                    </p>
+
+                </div>
+
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🛡️
+                    </div>
+
+                    <h3>
+                        Safe Adventures
+                    </h3>
+
+                    <p>
+                        Trek with useful information,
+                        planning and a community
+                        of fellow explorers.
+                    </p>
+
+                </div>
+
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        👥
+                    </div>
+
+                    <h3>
+                        Trek Community
+                    </h3>
+
+                    <p>
+                        Connect with other trekking
+                        enthusiasts and discover
+                        new adventures.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             FIND YOUR TREK
+        ========================================== -->
+
+        <section
+            class="find-trek-section"
+            id="find-trek"
+        >
+
+            <div>
+
+                <p class="section-tag">
+                    NOT SURE WHERE TO START?
+                </p>
+
+                <h2>
+                    Find Your Perfect Trek
+                </h2>
+
+                <p>
+                    Tell us your preferred difficulty
+                    and we'll help you find a trek.
+                </p>
+
+                <button
+                    type="button"
+                    class="btn primary-btn"
+                    id="findTrekBtn"
+                >
+                    Find My Trek
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             FORTS SECTION
+        ========================================== -->
+
+        <section
+            class="forts-section"
+            id="forts"
+        >
+
+            <div class="section-heading">
+
+                <p class="section-tag">
+                    MAHARASHTRA HERITAGE
+                </p>
+
+                <h2>
+                    Explore Famous Forts
+                </h2>
+
+            </div>
+
+
+            <div class="forts-container">
+
+
+                <!-- Rajgad -->
+
+                <div class="fort-card">
+
+                    <h3>
+                        Rajgad Fort
+                    </h3>
+
+                    <p>
+                        Known for its rich history,
+                        beautiful views and trekking trails.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="btn secondary-btn details-btn"
+                    >
+                        View Details
+                    </button>
+
+                </div>
+
+
+
+                <!-- Sinhagad -->
+
+                <div class="fort-card">
+
+                    <h3>
+                        Sinhagad Fort
+                    </h3>
+
+                    <p>
+                        A popular fort near Pune,
+                        perfect for beginners.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="btn secondary-btn details-btn"
+                    >
+                        View Details
+                    </button>
+
+                </div>
+
+
+
+                <!-- Torna -->
+
+                <div class="fort-card">
+
+                    <h3>
+                        Torna Fort
+                    </h3>
+
+                    <p>
+                        A challenging fort trek
+                        surrounded by beautiful landscapes.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="btn secondary-btn details-btn"
+                    >
+                        View Details
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             COMMUNITY SECTION
+        ========================================== -->
+
+        <section
+            class="community-section"
+            id="community"
+        >
+
+            <div>
+
+                <p class="section-tag">
+                    JOIN THE COMMUNITY
+                </p>
+
+                <h2>
+                    Never Trek Alone
+                </h2>
+
+                <p>
+                    Join our official WhatsApp community
+                    to discover upcoming treks,
+                    announcements and connect with
+                    fellow trekkers.
+                </p>
+
+
+                <a
+                    href="YOUR_WHATSAPP_GROUP_LINK"
+                    class="btn whatsapp-btn"
+                    id="whatsappBtn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    💬 Join WhatsApp Community
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================
+         BOOKING MODAL
+    ========================================== -->
+
+    <div
+        class="booking-modal"
+        id="bookingModal"
+    >
+
+        <div class="booking-box">
+
+
+            <!-- Close button -->
+
+            <button
+                type="button"
+                class="close-booking"
+                id="closeBooking"
+                aria-label="Close booking form"
+            >
+                ×
+            </button>
+
+
+            <h2>
+                Book Your Trek 🥾
+            </h2>
+
+            <p>
+                Fill in your details to reserve
+                your trek.
+            </p>
+
+
+            <form id="bookingForm">
+
+
+                <!-- Name -->
+
+                <label for="bookingName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="bookingName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <!-- Mobile -->
+
+                <label for="bookingMobile">
+                    Mobile Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="bookingMobile"
+                    placeholder="Enter your mobile number"
+                    pattern="[0-9]{10}"
+                    maxlength="10"
+                    required
+                >
+
+
+                <!-- People -->
+
+                <label for="bookingPeople">
+                    Number of People
+                </label>
+
+                <input
+                    type="number"
+                    id="bookingPeople"
+                    min="1"
+                    max="20"
+                    value="1"
+                    required
+                >
+
+
+                <!-- Selected Trek -->
+
+                <label for="bookingTrek">
+                    Selected Trek
+                </label>
+
+                <input
+                    type="text"
+                    id="bookingTrek"
+                    readonly
+                >
+
+
+                <!-- Confirm -->
+
+                <button
+                    type="submit"
+                    class="btn primary-btn"
+                >
+                    Confirm Booking
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>
+                Explore<span>WithUs</span>
+            </h2>
+
+            <p>
+                Explore. Trek. Discover.
+            </p>
+
+            <div class="footer-links">
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#treks">
+                    Treks
+                </a>
+
+                <a href="#forts">
+                    Forts
+                </a>
+
+                <a href="#community">
+                    Community
+                </a>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 ExploreWithUs.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
