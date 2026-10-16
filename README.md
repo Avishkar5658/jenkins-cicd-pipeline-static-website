@@ -13,7 +13,7 @@
 
 <br>
 
-<img src="screenshots/stage-view.png" alt="Jenkins Stage View: every stage of the pipeline turns green" width="780">
+<img src="screenshots/stage-view.gif" alt="Jenkins Stage View: every stage of the pipeline turns green" width="780">
 
 <sub>👆 <b>The pipeline in action:</b> each column is one step (clone, build, deploy, verify). Green means it worked.</sub>
 
