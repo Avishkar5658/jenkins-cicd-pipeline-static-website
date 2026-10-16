@@ -474,7 +474,7 @@ jenkins-cicd-pipeline-static-website/
     ├── jenkins-running.png
     ├── docker-permission.png
     ├── pipeline-config.png
-    ├── stage-view.png
+    ├── stage-view.gif
     └── website-live.png
 ```
 
